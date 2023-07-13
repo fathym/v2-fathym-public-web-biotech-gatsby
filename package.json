@@ -14,7 +14,7 @@
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit",
     "deploy": "npm version patch && npm run deploy:app",
-    "deploy:app": "npm version patch --prefix static && npm run build && npm publish ./public --access public"
+    "deploy:app": "npm version patch && npm run build && npm publish ./public --access public"
   },
   "dependencies": {
     "@plasmicapp/loader-gatsby": "^1.0.282",
