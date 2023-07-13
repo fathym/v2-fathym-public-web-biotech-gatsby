@@ -1,5 +1,5 @@
 {
-  "name": "tmp-cpa",
+  "name": "@fathym/v2-fathym-public-web-biotech-gatsby",
   "version": "1.0.0",
   "private": true,
   "description": "Plasmic app for tX9S8zkC2n9fJyfmdobiot",
@@ -12,7 +12,9 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit", 
+    "deploy": "npm version patch && npm run deploy:app",
+    "deploy:app": "npm version patch --prefix static && npm run build && npm publish ./public --access public"
   },
   "dependencies": {
     "@plasmicapp/loader-gatsby": "^1.0.282",
